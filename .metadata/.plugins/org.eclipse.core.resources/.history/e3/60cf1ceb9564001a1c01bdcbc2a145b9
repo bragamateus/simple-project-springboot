@@ -23,9 +23,9 @@ public class InstituicoesController {
 	public ModelAndView index() {
 		ModelAndView resultado = new ModelAndView("instituicao/index");
 		List<Instituicao> instituicoes = repositorioInstituicao.findAll();
-//		if (instituicoes == null) {
-//			instituicoes = new ArrayList<Instituicao>();
-//		}
+		if (instituicoes == null) {
+			instituicoes = new ArrayList<Instituicao>();
+		}
 		resultado.addObject("instituicoes", instituicoes);
 		return resultado;
 	}

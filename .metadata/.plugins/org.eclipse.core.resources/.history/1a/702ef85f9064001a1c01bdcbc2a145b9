@@ -1,9 +1,7 @@
 package br.com.treinaweb.springboot.controllers;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,16 +14,12 @@ import br.com.treinaweb.springboot.repositorios.RepositorioInstituicao;
 @RequestMapping("/instituicoes")
 public class InstituicoesController {
 	
-	@Autowired
 	private RepositorioInstituicao repositorioInstituicao;
 	
-	@GetMapping("/index")
+	@GetMapping
 	public ModelAndView index() {
 		ModelAndView resultado = new ModelAndView("instituicao/index");
 		List<Instituicao> instituicoes = repositorioInstituicao.findAll();
-//		if (instituicoes == null) {
-//			instituicoes = new ArrayList<Instituicao>();
-//		}
 		resultado.addObject("instituicoes", instituicoes);
 		return resultado;
 	}
