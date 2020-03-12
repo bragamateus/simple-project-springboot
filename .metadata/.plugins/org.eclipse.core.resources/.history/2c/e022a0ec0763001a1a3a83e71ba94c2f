@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-BR">
+<head>
+<meta charset="UTF-8"></meta>
+<title>Insert title here</title>
+<link href="/webjars/bootstrap/css/bootstrap.min.js" rel="styleshet" />
+</head>
+<body>
+
+</body>
+</html>

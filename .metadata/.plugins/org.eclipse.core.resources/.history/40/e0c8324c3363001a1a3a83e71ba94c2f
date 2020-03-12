@@ -1,0 +1,10 @@
+package br.com.treinaweb.springboot.entidades;
+
+import javax.persistence.Entity;
+
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@Entity
+public class Instituicao {
+
+}

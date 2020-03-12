@@ -1,0 +1,21 @@
+package br.com.treinaweb.springboot.entidades;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class Instituicao {
+	
+	@Id
+	@GeneratedValue
+	private Long id;
+	
+	@Column
+	private String nome;
+	
+	@Column
+	private String endereco;
+
+}
