@@ -58,11 +58,5 @@ public class InstituicoesController {
 		repositorioInstituicao.save(instituicao);
 		return "redirect:/instituicoes/index";
 	}
-	
-	@GetMapping("excluir/{id}")
-	public String excluir(@PathVariable Long id) {
-		repositorioInstituicao.delete(id);
-		return "redirect:/instituicoes/index";
-	}
 
 }
