@@ -33,7 +33,7 @@ public class InstituicoesController {
 	@GetMapping("/inserir")
 	public ModelAndView inserir() {
 		ModelAndView resultado = new ModelAndView("instituicao/inserir");
-		resultado.addObject("instituicao", new Instituicao());
+		resultado.addObject("instituicoes", new Instituicao());
 		return resultado;
 		
 	}

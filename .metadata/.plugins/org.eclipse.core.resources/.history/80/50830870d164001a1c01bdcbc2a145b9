@@ -33,12 +33,12 @@ public class InstituicoesController {
 	@GetMapping("/inserir")
 	public ModelAndView inserir() {
 		ModelAndView resultado = new ModelAndView("instituicao/inserir");
-		resultado.addObject("instituicao", new Instituicao());
+		resultado.addObject("instituicoes", new Instituicao());
 		return resultado;
 		
 	}
 	
-	@PostMapping("/inserir")
+	@PostMapping
 	public String inserir(Instituicao instituicao) {
 		repositorioInstituicao.save(instituicao);
 		return "redirect:/instituicoes/index";
